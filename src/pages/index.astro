@@ -2,7 +2,7 @@
 import "../styles/normalize.css";
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Greeting from '../components/Greeting.jsx';
+import Greeting from "../components/Greeting.jsx";
 
 const pageTitle = "Home";
 const heroClass = "home-hero";
@@ -16,8 +16,6 @@ const heroIngress = "This is the hero ingress for the Home page";
 >
 	<section id="first-section">
 		<h2>This site is under construction</h2>
-		<Greeting messages={["Hi", "Hello", "Howdy", "Hey there"]} />
 		<Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 	</section>
 </BaseLayout>
-	

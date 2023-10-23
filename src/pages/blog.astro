@@ -1,11 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import BlogPost from "../components/BlogPost.astro";
+
 const allPosts = await Astro.glob("../pages/posts/*.md");
 const pageTitle = "My Astro Learning Blog";
+const heroClass = "blog-hero";
+const heroIngress = "This is the hero ingress text for the Blog site";
+
 ---
 
-<BaseLayout pageTitle={pageTitle}>
+<BaseLayout
+	pageTitle={pageTitle}
+	heroClass={heroClass}
+	heroIngress={heroIngress}
+>
 	<p>This is where I will post about my journey learning Astro.</p>
 	<ul>
 		{
